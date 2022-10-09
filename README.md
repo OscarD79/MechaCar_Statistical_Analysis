@@ -3,7 +3,7 @@
 ## Background
 A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
 
-1. Linear Regression to Predict MPG
+Deliverable 1. Linear Regression to Predict MPG
 	* Perform multiple linear regression analysis to identify which variables in the dataset predict the 	mpg of MechaCar prototypes
 
 	![MechaCar Lienar Model Summary](./Resources/MultilinearRegression1.png)
@@ -30,6 +30,14 @@ A few weeks after starting his new role, Jeremy is approached by upper managemen
 	* Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the 	manufacturing lots
 
 	![Suspension Coil Summary](./Resources/Summary_PSI1.png)
+
+	![Suspension Coil PSI variance by lot](./Resources/lot_summary.png)
+
+	* The design specifications for the MechaCar suspension coils dictate that the variance of the 	suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet 	this design specification for all manufacturing lots in total and each lot individually? Why or why 	not?
+
+	- Methodology: Using group_by, we summarize the mean, median, variance and standard deviation. We use 	the variance to determine PSIs for the three lots to determine that which if any is over 100 PSI.
+
+	- Answer: **In total all lots meet the 100 PSI or less specification with an average PSI of about 62. 	However, while lots 1 and 2 individually met the PSI variance requirements lot 3 exceeded the variance 	requirements at 170 PSI.**
 
 
 3. Deliverable 3: T-Test on Suspension Coils
