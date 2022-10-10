@@ -21,19 +21,13 @@ This is a project to determine a way of predicting MPG designed to assist the co
 
 * Question 1: Which variables/coefficients provide a non-random amount of variance to the mpg values 	in the dataset?
 
-- Methodology: Review the Pr(>|t|) value in the summary above represents the probability that each coefficient contributes a random amount of variance to the linear model
-
 - Answer: **The car's length and ground clearance have a significant impact on mpg.**
 
 * Question 2: Is the slope of the linear model considered to be zero? Why or why not?
 	
-- Methodology: Examine the P-value in the summary above to see if the intercept is statistically significant.
-
-- Answer: **As the intercept is statistically significant and not zero, it indicates that the intercept explains a significant amount of variability in the dependent variable when all independent varaiables are set to zero.** This could mean two possible things, either significant features may need scaling or transforming to help improve the predictive power of the model or that there are other variables that can help explain the variability of the independent variable that are missing from the data.
+- Answer: **As the intercept is statistically significant and not zero, it indicates that the intercept explains a significant amount of variability in the dependent variable when all independent varaiables are set to zero.** This could mean that either significant features may need to be scaled or transformed to help improve the predictive power of the model or that there are other variables that can help explain the variability of the independent variable that are missing from the data (such as horse power).
 
 * Question 3: Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-
-- Methodology: Review the muliple R-squared value to indicate how well the regression model approximates the data points.The value should be between 0 and 1 and should be able to predict future data points well.
 
 - Answer: **As the mulitple R-squared value is 0.71 and the p-value is significant this model does a good job of predicting mpg.**
 
@@ -46,9 +40,9 @@ This is a project to determine a way of predicting MPG designed to assist the co
 
 * The design specifications for the MechaCar suspension coils dictate that the variance of the 	suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-- Methodology: Using group_by, we summarize the mean, median, variance and standard deviation. We use the variance to determine PSIs for the three lots to determine that which if any is over 100 PSI.
+Using group_by, we summarize the mean, median, variance and standard deviation. We use the variance to determine PSIs for the three lots to determine that which if any is over 100 PSI.
 
-- Answer: **In total all lots meet the 100 PSI or less specification with an average PSI of about 62. However, while lots 1 and 2 individually met the PSI variance requirements lot 3 exceeded the variance requirements at 170 PSI.**
+- Answer: **In total all lots meet the 100 PSI or less specification with an average PSI of about 62. However, while lots 1 and 2 individually met the PSI variance requirements lot 3 exceeded the variance requirements at 170 PSI. **
 
 
 ## T-Test on Suspension Coils
